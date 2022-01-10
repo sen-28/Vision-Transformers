@@ -103,6 +103,16 @@ Cassava consists of leaf images for the cassava plant depicting healthy and four
 - The MLP layer has a **linear layer** followed by **GELU activation**. This is again followed by a **linear layer**.
 - We use **12 blocks** for our implementation. There are **residual connections** after every block.
 
+## Self-Attention 
+
+Attention in layman terms is the process of selectively concentrating on a few things while ignoring other aspects. Takes in an **input of size n** and gives out an **output of size n**. Uses **Key, Query** and **Value** matrices. 
+
+**Self-Attention (SA):** For each element in an input sequence z ∈ R <sup> N X D </sup> we compute a weighted sum over all values v in the sequence. The attention weights A<sub>ij</sub> are based on the pairwise similarity between two elements of the sequence and their respective query q<sup>i</sup> and key k<sup>j</sup> representations.
+
+**Multihead self-attention (MSA) is an extension of SA in which we run k self-attention operations, called “heads”, in parallel, and project their concatenated outputs.**
+
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/attnetion.jpeg)
+
 ## Implementation details 
 
 - Training time - 55 minutes on Colab GPU
@@ -115,15 +125,6 @@ Cassava consists of leaf images for the cassava plant depicting healthy and four
 - Training accuracy after 10 epochs - 86.888
 - Validation accuracy after 10 epochs - 82.00
 
-## Self-Attention 
-
-Attention in layman terms is the process of selectively concentrating on a few things while ignoring other aspects. Takes in an **input of size n** and gives out an **output of size n**. Uses **Key, Query** and **Value** matrices. 
-
-**Self-Attention (SA):** For each element in an input sequence z ∈ R <sup> N X D </sup> we compute a weighted sum over all values v in the sequence. The attention weights A<sub>ij</sub> are based on the pairwise similarity between two elements of the sequence and their respective query q<sup>i</sup> and key k<sup>j</sup> representations.
-
-**Multihead self-attention (MSA) is an extension of SA in which we run k self-attention operations, called “heads”, in parallel, and project their concatenated outputs.**
-
-![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/attnetion.jpeg)
 
 ## Results
 
