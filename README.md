@@ -69,7 +69,7 @@ ImageNet is an image database organized containing more than 14 million  images 
 
 ## Cassava - Small Dataset (Fine-tuning)
 
-**We used the Cassava dataset consisting of a total of 21367 labelled images. **
+**We used the Cassava dataset consisting of a total of 21367 labelled images.**
 
 Cassava consists of leaf images for the cassava plant depicting healthy and four (4) disease conditions. 
 
@@ -84,12 +84,12 @@ Cassava consists of leaf images for the cassava plant depicting healthy and four
 
 ## Preprocessing
 
+**Pytorch was used for the code and training time was 55 minutes on Colab GPU.**
+
 - Train dataset - Normalization
 - Random transformations - horizontal and vertical flip
 - Resizing to 224*224
 - Validation dataset - Resizing to 224*224
-
-**Pytorch was used for the code and training time was 55 minutes on Colab GPU.**
 
 ## Model architecture
 
