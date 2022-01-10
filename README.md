@@ -41,7 +41,7 @@ E ∈ R<sup> (P .P ·C)×D </sup>  is the patch embedding,
 E<sub>pos</sub> ∈ R <sup>(N+1)×D</sup>  is the positional embedding,
 X<sub>class</sub> is the learnable embedding. 
 
-<!-- ![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/model_arc.jpg) -->
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/pos.jpg)
 
 ## Structure of Encoder
 
@@ -79,7 +79,7 @@ Cassava consists of leaf images for the cassava plant depicting healthy and four
 - Cassava Brown Streak Disease (CBSD)
 - Healthy
 
-![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/cassava.png)
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/cas.png)
 
 
 ## Preprocessing
