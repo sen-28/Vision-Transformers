@@ -41,7 +41,7 @@ E ∈ R<sup> (P .P ·C)×D </sup>  is the patch embedding,
 E<sub>pos</sub> ∈ R <sup>(N+1)×D</sup>  is the positional embedding,
 X<sub>class</sub> is the learnable embedding. 
 
-![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/model_arc.jpg)
+<!-- ![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/model_arc.jpg) -->
 
 ## Structure of Encoder
 
@@ -135,7 +135,9 @@ This simple, yet scalable, strategy works surprisingly well when coupled with pr
 
 **Thus, Vision Transformer matches or exceeds the state of the art on many image classification datasets, whilst being relatively cheap to pre-train.**
 
-![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/res.png)
+## Results - Loss
+
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/results.png)
 
 Due to GPU contraints, the following steps were carried out for the datasets. This also had an impact on the results obtained.
 
