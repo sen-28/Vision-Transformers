@@ -41,7 +41,7 @@ E ∈ R<sup> (P .P ·C)×D </sup>  is the patch embedding,
 E<sub>pos</sub> ∈ R <sup>(N+1)×D</sup>  is the positional embedding,
 X<sub>class</sub> is the learnable embedding. 
 
-![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/pos.jpg)
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/pos.png)
 
 ## Structure of Encoder
 
