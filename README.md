@@ -115,6 +115,43 @@ Cassava consists of leaf images for the cassava plant depicting healthy and four
 - Training accuracy after 10 epochs - 86.888
 - Validation accuracy after 10 epochs - 82.00
 
+## Self-Attention 
+
+Attention in layman terms is the process of selectively concentrating on a few things while ignoring other aspects. Takes in an **input of size n** and gives out an **output of size n**. Uses **Key, Query** and **Value** matrices. 
+
+**Self-Attention (SA):** For each element in an input sequence z ∈ R <sup> N X D </sup> we compute a weighted sum over all values v in the sequence. The attention weights A<sub>ij</sub> are based on the pairwise similarity between two elements of the sequence and their respective query q<sup>i</sup> and key k<sup>j</sup> representations.
+
+**Multihead self-attention (MSA) is an extension of SA in which we run k self-attention operations, called “heads”, in parallel, and project their concatenated outputs.**
+
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/attnetion.jpeg)
+
+## Results
+
+**Using the ViT model, we have explored the direct application of Transformers to image recognition.**
+
+Unlike prior works using self-attention in computer vision, we do not introduce image-specific inductive biases into the architecture apart from the initial patch extraction step. Instead, we interpret an image as a sequence of patches and process it by a standard Transformer encoder as used in NLP.
+
+This simple, yet scalable, strategy works surprisingly well when coupled with pre-training on large datasets.
+
+**Thus, Vision Transformer matches or exceeds the state of the art on many image classification datasets, whilst being relatively cheap to pre-train.**
+
+![alt text](https://github.com/sen-28/Vision-Transformers/blob/main/vision_images/res.png)
+
+Due to GPU contraints, the following steps were carried out for the datasets. This also had an impact on the results obtained.
+
+**ImageNet for Pre-Training -** It was not practically possible to train the ImageNet dataset on Vision transformer with a single Colab GPU. I defined the architecture and loaded pre-trained weights from the official Github repository.
+
+**Cassava Leaf Disease Classification -** I fine-tuned on a subset of 1500 images. I used 10% of these for cross-validation. I also reduced the number of classes to 3 instead of 5. 
+
+## Future scope
+
+The follow-up works that have been made on Vision transformers are very encouraging. They include - 
+
+- **Applying ViT to other computer vision tasks, such as detection and segmentation.** DINO (a method for self-supervised training of Vision Transformers) by Facebook AI. DINO models are capable of segmenting objects, without having ever been trained to do so. 
+- **Further scaling of ViT would likely lead to improved performance.** ViT models haven’t shown any signs of saturating performance yet.
+- **Zero-shot learning**
+
+
 
 
 
